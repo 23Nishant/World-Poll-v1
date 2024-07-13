@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acme Polls</title>
+        <!-- Add any necessary CSS links or style tags here -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <!-- Your existing content goes here -->
+        <div class="flex flex-col min-h-dvh">
+            <!--
+// v0 by Vercel.
+// https://v0.dev/t/7mhhi6RGkac
+-->
+
+            <div class="flex flex-col min-h-dvh">
+                <div
+                    class="bg-primary text-primary-foreground py-3 px-4 flex items-center justify-between">
+                    <a class="flex items-center gap-2" href="#">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-6 w-6">
+                            <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+                        </svg>
+                        <span class="text-lg font-semibold">Acme Polls</span>
+                    </a>
+                    <div class="flex items-center gap-4">
+                        <button
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-10 w-10">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="h-5 w-5">
+                                <path
+                                    d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path>
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                            </svg>
+                            <span class="sr-only">Notifications</span>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="h-5 w-5 mr-2">
+                                <path
+                                    d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
+                                <path
+                                    d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
+                            </svg>
+                            Connect Wallet
+                        </button>
+                    </div>
+                </div>
+                <main
+                    class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                    <div
+                        class="rounded-lg bg-card text-card-foreground border-0 shadow-none"
+                        data-v0-t="card">
+                        <div class="p-0">
+                            <div class="bg-muted p-4 rounded-t-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border">
+                                            <img
+                                                class="aspect-square h-full w-full"
+                                                alt="@shadcn"
+                                                src="/1.jpeg" />
+                                        </span>
+                                        <div>
+                                            <div class="font-medium">John
+                                                Doe</div>
+                                            <div
+                                                class="text-sm text-muted-foreground">@johndoe</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="text-sm font-medium">1v1</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="h-4 w-4">
+                                            <polyline
+                                                points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                            <polyline
+                                                points="16 7 22 7 22 13"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-2xl font-bold">Which is better,
+                                    cats or dogs?</div>
+                                <div
+                                    class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        Cats
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        Dogs
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-lg bg-card text-card-foreground border-0 shadow-none"
+                        data-v0-t="card">
+                        <div class="p-0">
+                            <div class="bg-muted p-4 rounded-t-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border">
+                                            <img
+                                                class="aspect-square h-full w-full"
+                                                alt="@shadcn"
+                                                src="/1.jpeg" />
+                                        </span>
+                                        <div>
+                                            <div class="font-medium">Jane
+                                                Smith</div>
+                                            <div
+                                                class="text-sm text-muted-foreground">@janesmith</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="text-sm font-medium">1v1</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="h-4 w-4">
+                                            <polyline
+                                                points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                                            <polyline
+                                                points="16 17 22 17 22 11"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-2xl font-bold">Should we have a
+                                    4-day work week?</div>
+                                <div
+                                    class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        Yes
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        No
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-lg bg-card text-card-foreground border-0 shadow-none"
+                        data-v0-t="card">
+                        <div class="p-0">
+                            <div class="bg-muted p-4 rounded-t-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border">
+                                            <img
+                                                class="aspect-square h-full w-full"
+                                                alt="@shadcn"
+                                                src="/1.jpeg" />
+                                        </span>
+                                        <div>
+                                            <div class="font-medium">Bob
+                                                Johnson</div>
+                                            <div
+                                                class="text-sm text-muted-foreground">@bobjohnson</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="text-sm font-medium">1v1</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="h-4 w-4">
+                                            <polyline
+                                                points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                                            <polyline
+                                                points="16 7 22 7 22 13"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-2xl font-bold">Should we ban
+                                    single-use plastics?</div>
+                                <div
+                                    class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        Yes
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        No
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="rounded-lg bg-card text-card-foreground border-0 shadow-none"
+                        data-v0-t="card">
+                        <div class="p-0">
+                            <div class="bg-muted p-4 rounded-t-lg">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span
+                                            class="relative flex shrink-0 overflow-hidden rounded-full w-8 h-8 border">
+                                            <img
+                                                class="aspect-square h-full w-full"
+                                                alt="@shadcn"
+                                                src="/1.jpeg" />
+                                        </span>
+                                        <div>
+                                            <div class="font-medium">Sarah
+                                                Lee</div>
+                                            <div
+                                                class="text-sm text-muted-foreground">@sarahlee</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <div
+                                            class="text-sm font-medium">1v1</div>
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            class="h-4 w-4">
+                                            <polyline
+                                                points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline>
+                                            <polyline
+                                                points="16 17 22 17 22 11"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-4">
+                                <div class="text-2xl font-bold">Should we raise
+                                    the minimum wage?</div>
+                                <div
+                                    class="flex items-center justify-between mt-4">
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        Yes
+                                    </button>
+                                    <button
+                                        class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3">
+                                        No
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="bg-muted p-4 flex items-center justify-between">
+                    <a class="text-sm font-medium hover:underline" href="#">
+                        Farcaster
+                    </a>
+                </footer>
+            </div>
+        </div>
+        <!-- Add any necessary JavaScript links or script tags here -->
+    </body>
+</html>
